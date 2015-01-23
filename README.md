@@ -1,4 +1,4 @@
-# Cousera Course - Getting And Cleaning Data Project
+# Cousera Course - Getting And Cleaning Data - Course Project
 
 ## How to use "run_analysis.R" script to get tidy data set.
 1. Download data set from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
