@@ -1,13 +1,13 @@
 # Code book for tidy data set
 
-Giving each combination of subject and activity, the tidy data set inlcudes the average of 79 selected sensor data produced by the orignal research (an explanation to the orignal research can be found in the following sections). The meaning of each columns can be found in the section "Column Definitions".
+Giving each combination of subject and activity, the tidy data set inlcudes the average of 79 selected sensor data produced by the orignal research (an explanation to the orignal research can be found in the following sections). The meaning of each columns in the tidy data set can be found in the section "Column Definitions".
 
 ## Column Definitions
 
 * subjectID: A unique integer with a range of 1 to 30 representing individual subjects
 * activityName: A factor with 6 levels translated from the original research. They are "WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"
 
-The remaining 79 columns are the average of selected sensor data produced by the original research. Note that only the variables containing "std" or "mean" in the orignal data set are included. An explanation to the original data can be found in the following sections.
+The remaining 79 columns are numeric values. They calculate the average of selected sensor data produced by the original research. Note that only the variables containing "std" or "mean" in the orignal data set are included. An explanation to the original data can be found in the following sections.
 * tBodyAcc_mean_X
 * tBodyAcc_mean_Y
 * tBodyAcc_mean_Z
