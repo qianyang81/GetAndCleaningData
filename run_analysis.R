@@ -30,11 +30,15 @@ getandcleandata<-function(directory="UCI HAR Dataset", outfile="tidyData.txt"){
   # merge both train and test set into one table (STEP 1)
   allX <- rbind(trainX, testX)
   allY <- rbind(trainY, testY)
-  allSub <- rbind(trainSub, testSub)
+  allSub <- rbind(trainSub, testSub)  
+  
+  # fix the variable names
+  features <- gsub("()", "", features, fixed=TRUE)
+  features <- gsub("-", "_", features, fixed=TRUE)
   
   # label the data set with descriptive variable names (STEP 4)
   names(allX) <- features 
-
+  
   # extracts only the measurements on the mean and standard deviation for each measurement (STEP 2)
   subX <- allX[,grep("std|mean",names(allX))]
   
@@ -52,5 +56,4 @@ getandcleandata<-function(directory="UCI HAR Dataset", outfile="tidyData.txt"){
    
   # write the data summary to a text file with name outfile (default value is "tidyData.txt")
   write.table(allDataSummary, file=outfile, row.names=FALSE)
-  
 }
