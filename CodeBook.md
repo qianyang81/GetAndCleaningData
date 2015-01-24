@@ -7,7 +7,7 @@ Giving each combination of subject and activity, the tidy data set inlcudes the 
 * subjectID: A unique integer with a range of 1 to 30 representing individual subjects
 * activityName: A factor with 6 levels translated from the original research. They are "WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"
 
-The remaining 79 columns are numeric values. They calculate the average of selected sensor data produced by the original research. Note that only the variables containing "std" or "mean" in the orignal data set are included. An explanation to the original data can be found in the following sections.
+The remaining 79 columns are numeric values. They calculate the average of selected sensor data produced by the original research. Note that only the features containing "std" or "mean" in the orignal data set are included. An explanation to the original data can be found in the following sections. Since the original features are normalized and bounded within [-1,1]. So no normalization is needed here and the data is unitless. 
 * tBodyAcc_mean_X
 * tBodyAcc_mean_Y
 * tBodyAcc_mean_Z
